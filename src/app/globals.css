@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+  --background: white;
+  --foreground: #171717;
+}
+
+html {
+  scroll-padding-top: 150px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Roboto Mono', monospace;
+}
+
+.navigation {
+  position:sticky;
+  z-index: 5;
+  top: 0;
+  padding: 1rem;
+  background-color: white;
+}
+
+.nav-list {
+  display: flex;                     
+  justify-content: center;           
+  list-style-type: none;          
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin: 0 2.5rem;                
+}
+
+.greeting {
+  font-size: 3rem;
+}
+
+.name {
+  font-size: 7.5rem;
+}
+
+.section-heading {
+  font-size: 3rem;
+}
+
+.tech-stack {
+  font-size: 1.5rem;
+}
+
+.job-title {
+  font-size: 1.20rem;
+}
+
+.blurb {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.img-background {
+  width: 30rem;
+  height: 35rem;
+  background-color: #171717;
+}
+
+.project-background {
+  width: 35rem;
+  height: 25rem;
+  background-color: #171717;
+}
+
+.project-name {
+  font-size: 1.5rem;
+}
+
+.job-card {
+  background-color: #171717;
+}
+
+.scroll-button {
+  margin-top: 35rem;
+}
+
+.social {
+  margin-top: 25rem;
+}
+
+.line {
+  border-radius: 5%;
+}
