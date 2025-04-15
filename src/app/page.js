@@ -1,4 +1,5 @@
-import Image from "next/image";
+import Navigation from "./navigation";
+
 
 export default function Home() {
   return (
@@ -6,17 +7,9 @@ export default function Home() {
     <div className="font-[family-name:var(--font-geist-sans)]">
       <main>
 
-        {/* NAVIGATION */}
-        <nav className="navigation mb-10">
-          <ul className="nav-list">
-            <li><a href="#home" className="nav-link">HOME</a></li>
-            <li><a href="#about" className="nav-link">ABOUT</a></li>
-            <li><a href="#experience" className="nav-link">EXPERIENCE</a></li>
-            <li><a href="#work" className="nav-link">WORK</a></li>
-          </ul>
-        </nav>
-
-          {/* EXTERNAL LINKS */}
+        <Navigation />
+      
+        {/* EXTERNAL LINKS */}
         <div className="fixed top-1/2 right-5 flex flex-col gap-5 z-50">
               <a href="https://github.com/codedknife">
                 <img src="/github-mark.png" alt="GitHub Icon" className="w-5 h-5" />
@@ -25,8 +18,7 @@ export default function Home() {
                <a href="https://www.linkedin.com/in/ash-tran/">
                 <img src="/linkedin.png" alt="LinkedIn Icon" className="w-5 h-5" />
               </a>
-            </div>
-
+        </div>
 
         {/* LANDING SECTION */}
         <div id="home" className=" relative grid grid-cols-1 min-h-screen place-items-center">
