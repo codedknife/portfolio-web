@@ -4,8 +4,7 @@ import React, { useState } from 'react';
 
 const VerticalTabs = () => {
   const [activeTab, setActiveTab] = useState('tab1');
-
-  const [openAccordion, setOpenAccordion] = useState(null);
+  const [openAccordion, setOpenAccordion] = useState('tab1');
 
   const toggleAccordion = (tabId) => {
     setOpenAccordion(openAccordion === tabId ? null : tabId);
@@ -275,7 +274,6 @@ const VerticalTabs = () => {
             {tabs.map((tab) =>
             activeTab === tab.id ? (
                 <div key={tab.id}>
-                <h2 className="text-2xl font-bold mb-5">{tab.label}</h2>
                 {tab.content}
                 </div>
             ) : null
@@ -285,25 +283,39 @@ const VerticalTabs = () => {
         </div>
 
         {/* MOBILE ACCORDION */}
-        <div className="md:hidden w-full space-y-3 p-3">
-        {tabs.map((tab) => (
-        <div key={tab.id} className="border overflow-hidden">
-            <button
-            onClick={() => toggleAccordion(tab.id)}
-            className="w-full text-left p-3 bg-black text-white"
-            >
-            {tab.label}
-            </button>
-            {openAccordion === tab.id && (
-            <div className="bg-white p-3">
-                <h2 className="text-lg font-bold mb-3">{tab.label}</h2>
-                {tab.content}
+        <div className="md:hidden w-full p-3 bg-white">
+            {tabs.map((tab) => (
+                <div key={tab.id} className="border-l-4 border-l-[#7e7c73] mb-2">
+                <button
+                    onClick={() => toggleAccordion(tab.id)}
+                    className="w-full p-3 flex justify-between items-center transition-colors duration-300"
+                >
+                    <span
+                    className={`text-left transition-colors duration-300 ${
+                        openAccordion === tab.id ? 'text-[#7e7c73]' : 'text-black'
+                    }`}
+                    >
+                    {tab.label}
+                    </span>
+
+                    <span
+                        className={`ml-2 text-xl inline-block transform transition-transform duration-300 ease-in-out ${
+                            openAccordion === tab.id ? 'rotate-90 text-[#7e7c73]' : 'rotate-0 text-gray-500'
+                        }`}
+                        >
+                        ›
+                    </span>
+                </button>
+
+                {openAccordion === tab.id && (
+                    <div className="bg-white p-3 border-t">
+                    {tab.content}
+                    </div>
+                )}
+                </div>
+            ))}
             </div>
-            )}
         </div>
-        ))}
-    </div>
-  </div>
   );
 };
 
