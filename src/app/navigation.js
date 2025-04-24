@@ -22,10 +22,9 @@ export default function Navigation() {
             {isMenuOpen && (
             <nav className="pb-4">
                 <ul className="flex flex-col gap-4 text-center">
-                <li><a href="#home" className="nav-link" onClick={() => setIsMenuOpen(false)}>HOME</a></li>
                 <li><a href="#about" className="nav-link" onClick={() => setIsMenuOpen(false)}>ABOUT</a></li>
                 <li><a href="#experience" className="nav-link" onClick={() => setIsMenuOpen(false)}>EXPERIENCE</a></li>
-                <li><a href="#work" className="nav-link" onClick={() => setIsMenuOpen(false)}>WORK</a></li>
+                <li><a href="#work" className="nav-link" onClick={() => setIsMenuOpen(false)}>PORTFOLIO</a></li>
                 </ul>
             </nav>
             )}
@@ -34,10 +33,9 @@ export default function Navigation() {
         {/* DESKTOP MENU */}
         <nav className="navigation mb-10 hidden sm:block">
             <ul className="nav-list flex space-x-10">
-                <li><a href="#home" className="nav-link">HOME</a></li>
                 <li><a href="#about" className="nav-link">ABOUT</a></li>
                 <li><a href="#experience" className="nav-link">EXPERIENCE</a></li>
-                <li><a href="#work" className="nav-link">WORK</a></li>
+                <li><a href="#work" className="nav-link">PORTFOLIO</a></li>
             </ul>
         </nav>
     </>
