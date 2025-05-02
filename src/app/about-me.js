@@ -5,7 +5,7 @@ import React from 'react';
 const AboutSection = () => {
   return (
     <div id="about" className="min-h-screen grid place-items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 ml-15 mr-15 md:ml-25 md:mr-25 mb-5 md:mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 ml-10 mr-10 md:ml-10 md:mr-25 mb-5 md:mb-10">
 
         {/* IMG */}
         <div className="relative img-background w-full h-64 md:w-3/4">

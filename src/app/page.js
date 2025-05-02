@@ -16,7 +16,7 @@ export default function Home() {
         <Navigation />
       
         {/* EXTERNAL LINKS */}
-        <div className="fixed top-1/2 right-5 flex flex-col gap-5 z-50">
+        <div className="hidden md:block fixed top-1/2 right-5 flex flex-col gap-5 z-50">
               <a href="https://github.com/codedknife">
                 <img src="/github-mark.png" alt="GitHub Icon" className="w-5 h-5" />
               </a>
@@ -55,13 +55,14 @@ export default function Home() {
         <AboutSection/>
         
          {/* EXPERIENCE SECTION*/}
-        <div className="min-h-screen ml-15 mr-15 md:ml-25 md:mr-25 mb-5 md:mb-10">
+        <div className="min-h-screen ml-10 mr-10 md:ml-25 md:mr-25 mb-5 md:mb-10">
           <h2 id="experience" className="text-[2rem] md:text-[3rem] font-bold text-center md:text-start">EXPERIENCE</h2>
               <VerticalTabs/>
         </div>
 
-        <div className="min-h-screen ml-15 mr-15 md:ml-25 md:mr-25 mb-5 md:mb-10">
-        <h2 id="work" className="text-[2rem] md:text-[3rem] font-bold mb-5 text-center md:text-start">PORTFOLIO</h2>
+        <div className="min-h-screen ml-10 mr-10 md:ml-25 md:mr-25 mb-5 md:mb-10">
+        <h2 id="work" className="text-[2rem] md:text-[3rem] font-bold mb-5 text-center md:text-start">PORTFOLIO</h2>S
+
         <div className="grid grid-cols-1 md:grid-cols-2 place-items-center ml-15 mr-15 mb-15">
         <div className="project-background hidden sm:block"></div>
           <div className="text-center">

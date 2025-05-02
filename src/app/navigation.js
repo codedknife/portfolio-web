@@ -21,10 +21,19 @@ export default function Navigation() {
             {/* MOBILE MENU */}
             {isMenuOpen && (
             <nav className="pb-4">
-                <ul className="flex flex-col gap-4 text-center">
-                <li><a href="#about" className="nav-link" onClick={() => setIsMenuOpen(false)}>ABOUT</a></li>
-                <li><a href="#experience" className="nav-link" onClick={() => setIsMenuOpen(false)}>EXPERIENCE</a></li>
-                <li><a href="#work" className="nav-link" onClick={() => setIsMenuOpen(false)}>PORTFOLIO</a></li>
+                <ul className="items-center flex flex-col gap-4 text-center">
+                    <li><a href="#about" className="nav-link" onClick={() => setIsMenuOpen(false)}>ABOUT</a></li>
+                    <li><a href="#experience" className="nav-link" onClick={() => setIsMenuOpen(false)}>EXPERIENCE</a></li>
+                    <li><a href="#work" className="nav-link" onClick={() => setIsMenuOpen(false)}>PORTFOLIO</a></li>
+                    <div className="flex flex-col gap-5">
+                        <a href="https://github.com/codedknife">
+                            <img src="/github-mark.png" alt="GitHub Icon" className="w-5 h-5" />
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/ash-tran/">
+                            <img src="/linkedin.png" alt="LinkedIn Icon" className="w-5 h-5" />
+                        </a>
+                    </div>
                 </ul>
             </nav>
             )}
