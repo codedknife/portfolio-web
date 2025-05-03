@@ -18,16 +18,16 @@ const AboutSection = () => {
             <h2 className="text-[2rem] md:text-[3rem] font-bold mt-5 md:mt-0">ABOUT</h2>
             {/* SUBHEADING */}
             <h3 className="text-[1.25rem] mb-[1rem] md:text-[1.50rem] font-bold text-[#66615C]"> A developer who creates meaningful digital experiences with a focus on design, usability, and clean code.</h3>
-            <p className="text-justify">
+            <p className="text-justify text-[1rem] md:text-[1.25rem]">
                 I graduated from Michigan State University in Spring 2024 with a bachelor's degree in Computer Science and a minor in Business. 
                 I love using modern tools and frameworks to bring creative ideas to life.
             </p>
             <br/>
-            <p className="text-justify">
+            <p className="text-justify text-[1rem] md:text-[1.25rem]">
                 Whether I’m working on a solo project or collaborating with a team, I enjoy the challenge of turning a concept into something people can actually enjoy.
             </p>
             <br/>
-            <p className="text-justify">
+            <p className="text-justify text-[1rem] md:text-[1.25rem]">
                 When I’m not in front of a screen, you’ll probably find me outside — hiking, exploring somewhere new, or just enjoying some fresh air. 
                 I’m also a huge horror movie fan and share my everyday adventures with my partner, our cat, and our hamster.
             </p>

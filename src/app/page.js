@@ -16,7 +16,7 @@ export default function Home() {
         <Navigation />
       
         {/* EXTERNAL LINKS */}
-        <div className="hidden md:block fixed top-1/2 right-5 flex flex-col gap-5 z-50">
+        <div className="hidden md:flex fixed top-1/2 right-5 flex-col gap-5 z-50">
               <a href="https://github.com/codedknife">
                 <img src="/github-mark.png" alt="GitHub Icon" className="w-5 h-5" />
               </a>
@@ -61,46 +61,73 @@ export default function Home() {
         </div>
 
         <div className="min-h-screen ml-10 mr-10 md:ml-25 md:mr-25 mb-5 md:mb-10">
-        <h2 id="work" className="text-[2rem] md:text-[3rem] font-bold mb-5 text-center md:text-start">PORTFOLIO</h2>S
+        <h2 id="work" className="text-[2rem] md:text-[3rem] font-bold mb-5 text-center md:text-start">PORTFOLIO</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 place-items-center ml-15 mr-15 mb-15">
-        <div className="project-background hidden sm:block"></div>
-          <div className="text-center">
-            <h3 className="project-name">VISIONARY PHOTOBOOTHS</h3>
-            <h4>AUGUST 2024 - AUGUST 2024</h4>
-            <ul className="flex flex-wrap justify-center gap-2 mt-4">
-                  {[
-                    "PAGECLOUD CMS",
-                    "UX/UI",
-                    "SEARCH ENGINE OPTIMIZATION (SEO)",
-                  ].map((specialty) => (
-                    <li
-                      key={specialty}
-                      className="bg-[#66615C] text-white text-xs font-medium px-3 py-1"
-                    >
-                      {specialty}
-                    </li>
-                  ))}
-                </ul>
-            <a
-              href="https://visionarymi.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-5 py-2 bg-black text-white hover:bg-[#66615C] transition mt-5"
-            >
-              LEARN MORE
-            </a>
-
+        <div className="flex justify-start mt-10">
+        <a className="w-1/1 md:w-1/2 h-64 bg-white border border-gray-300 p-5 flex flex-col items-center justify-center text-center">
+          <div>
+              <h2 className="text-2xl font-bold mb-4">VIRTUAL TRADING ASSISTANT</h2>
+              <h4>MAY 2025 - PRESENT</h4>
+              <ul className="flex flex-wrap justify-center gap-2 mt-4">
+                    {[
+                      "SOFTWARE DEVELOPMENT",
+                      "PYTHON",
+                      "COMPUTER VISION",
+                      "OCR",
+                    ].map((specialty) => (
+                      <li
+                        key={specialty}
+                        className="bg-[#66615C] text-white text-xs font-medium px-3 py-1"
+                      >
+                        {specialty}
+                      </li>
+                    ))}
+                  </ul>
           </div>
-                
+          </a>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 place-items-center ml-15 mr-15">
-        <div className="project-background hidden sm:block"></div>
-          <div className="text-center">
-            <h3 className="project-name">AUDIT BUDDY</h3>
-            <h4>JANUARY 2024 - APRIL 2024</h4>
-            <ul className="flex flex-wrap justify-center gap-2 mt-4">
+
+        <div className="flex justify-end mt-10">
+        <a href="https://visionarymi.com/" className="w-1/1 md:w-1/2 h-64 bg-white border border-gray-300 p-5 flex flex-col items-center justify-center text-center">
+          <div>
+              <h2 className="text-2xl font-bold mb-4">VISIONARY PHOTOBOOTHS</h2>
+              <h4>AUGUST 2024 - AUGUST 2024</h4>
+              <ul className="flex flex-wrap justify-center gap-2 mt-4">
+                    {[
+                      "WEB DEVELOPMENT",
+                      "PAGECLOUD CMS",
+                      "UX/UI",
+                      "SEARCH ENGINE OPTIMIZATION (SEO)",
+                    ].map((specialty) => (
+                      <li
+                        key={specialty}
+                        className="bg-[#66615C] text-white text-xs font-medium px-3 py-1"
+                      >
+                        {specialty}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <a
+                    href="https://visionarymi.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-5 py-2 bg-black text-white hover:bg-[#66615C] transition mt-5"
+                  >
+                    LEARN MORE
+                  </a>
+          </div>
+          </a>
+        </div>
+
+        <div className="flex justify-start mt-10">
+        <a href="https://capstone.cse.msu.edu/2024-01/projects/urban-science/" className="w-1/1 md:w-1/2 h-64 bg-white border border-gray-300 p-5 flex flex-col items-center justify-center text-center">
+          <div>
+              <h2 className="text-2xl font-bold mb-4">AUDITBUDDY</h2>
+              <h4>AUGUST 2024 - AUGUST 2024</h4>
+              <ul className="flex flex-wrap justify-center gap-2 mt-4">
                   {[
+                    "WEB DEVELOPMENT",
                     "JAVASCRIPT",
                     "REACT",
                     "PYTHON FLASK",
@@ -115,15 +142,16 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-            <a
-              href="https://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-5 py-2 bg-black text-white hover:bg-[#66615C] transition mt-5"
-            >
-              LEARN MORE
-            </a>
+                <a
+                  href="https://capstone.cse.msu.edu/2024-01/projects/urban-science/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-5 py-2 bg-black text-white hover:bg-[#66615C] transition mt-5"
+                >
+                  LEARN MORE
+                </a>
           </div>
+          </a>
         </div>
         </div>
       </main>

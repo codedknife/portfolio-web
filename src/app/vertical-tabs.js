@@ -13,10 +13,10 @@ const VerticalTabs = () => {
 
   const WebContentAdministratorContent = () => (
     <div className="space-y-5">
-      <h2 className="text-xl font-bold">Michigan State University, College of Engineering</h2>
+      <h2 className="text-[1.50rem] md:text-[2rem] font-bold">Michigan State University, College of Engineering</h2>
       <p className="text-[1rem] text-[#7e7c73]">MAY 2024 - PRESENT</p>
       <p className="mt-7">RESPONSIBILITIES</p>
-      <ul className="items-start text-[1rem] py-1 list-none mt-1">
+      <ul className="items-start text-[1rem] md:text-[1.25rem] py-1 list-none mt-1">
         <li>
             <span className="text-[#7e7c73] mr-2 font-bold">+</span>
             Lead the migration of web content of college website onto designated web platforms
@@ -50,7 +50,7 @@ const VerticalTabs = () => {
                    ].map((specialty) => (
                      <li
                        key={specialty}
-                       className="flex items-start text-[0.75rem] font-medium py-1 list-none list-inside "
+                       className="flex items-start text-[0.75rem] md:text-[1rem] font-medium py-1 list-none list-inside "
                      >
                         <span className="text-[#7e7c73] mr-2">+</span>
                        {specialty}
@@ -62,10 +62,10 @@ const VerticalTabs = () => {
 
   const UndergraduateLearningAssistantContent = () => (
     <div className="space-y-5">
-      <h2 className="text-xl font-bold">Michigan State University, College of Engineering</h2>
+      <h2 className="text-[1.50rem] md:text-[2rem] font-bold">Michigan State University, College of Engineering</h2>
       <p className="text-[1rem] text-[#7e7c73]">JANUARY 2024 - MAY 2024</p>
       <p className="mt-7">RESPONSIBILITIES</p>
-      <ul className="items-start list-none">
+      <ul className="items-start list-none text-[1rem] md:text-[1.25rem]">
         <li>
             <span className="text-[#7e7c73] mr-2 font-bold">+</span>
             Facilitated learning in frontend technologies, backend development, and
@@ -93,7 +93,7 @@ const VerticalTabs = () => {
                    ].map((specialty) => (
                      <li
                        key={specialty}
-                       className="flex items-start text-[0.75rem] font-medium py-1 list-none list-inside "
+                       className="flex items-start text-[0.75rem] md:text-[1rem] font-medium py-1 list-none list-inside "
                      >
                         <span className="text-[#7e7c73] mr-2">+</span>
                        {specialty}
@@ -105,10 +105,10 @@ const VerticalTabs = () => {
 
   const StudentFrontEndWebAssistantContent = () => (
     <div className="space-y-5">
-      <h2 className="text-xl font-bold">Michigan State University, College of Engineering</h2>
+      <h2 className="text-[1.50rem] md:text-[2rem] font-bold">Michigan State University, College of Engineering</h2>
       <p className="text-[1rem] text-[#7e7c73]">MAY 2023 - MAY 2024</p>
       <p className="mt-7">RESPONSIBILITIES</p>
-      <ul className="items-start text-[1rem] py-1 list-none mt-1">
+      <ul className="items-start text-[1rem] md:text-[1.25rem] py-1 list-none mt-1">
         <li>
             <span className="text-[#7e7c73] mr-2 font-bold">+</span>
             Supported the launch and future phases of college website within Sitecore and Drupal
@@ -132,7 +132,7 @@ const VerticalTabs = () => {
                    ].map((specialty) => (
                      <li
                        key={specialty}
-                       className="flex items-start text-[0.75rem] font-medium py-1 list-none list-inside "
+                       className="flex items-start text-[0.75rem] md:text-[1rem] font-medium py-1 list-none list-inside "
                      >
                         <span className="text-[#7e7c73] mr-2">+</span>
                        {specialty}
@@ -144,10 +144,10 @@ const VerticalTabs = () => {
 
   const InformationTechnologyInternContent = () => (
     <div className="space-y-5">
-      <h2 className="text-xl font-bold">North American Lighting</h2>
+      <h2 className="text-[1.50rem] md:text-[2rem] font-bold">North American Lighting</h2>
       <p className="text-[1rem] text-[#7e7c73]">MAY 2023 - AUGUST 2023</p>
       <p className="mt-7">RESPONSIBILITIES</p>
-      <ul className="items-start text-[1rem] py-1 list-none mt-1">
+      <ul className="items-start text-[1rem] md:text-[1.25rem] py-1 list-none mt-1">
         <li>
             <span className="text-[#7e7c73] mr-2 font-bold">+</span>
             Conducted computer imaging to customize factory laptops according to company standards, integrating essential software
@@ -170,7 +170,7 @@ const VerticalTabs = () => {
                    ].map((specialty) => (
                      <li
                        key={specialty}
-                       className="flex items-start text-[0.75rem] font-medium py-1 list-none list-inside "
+                       className="flex items-start text-[0.75rem] md:text-[1rem] font-medium py-1 list-none list-inside "
                      >
                         <span className="text-[#7e7c73] mr-2">+</span>
                        {specialty}
@@ -182,10 +182,10 @@ const VerticalTabs = () => {
 
   const CashierContent = () => (
     <div className="space-y-5">
-      <h2 className="text-xl font-bold">Asia's Finest</h2>
+      <h2 className="text-[1.50rem] md:text-[2rem] font-bold">Asia's Finest</h2>
       <p className="text-[1rem] text-[#7e7c73]">DECEMBER 2019 - DECEMBER 2023</p>
       <p className="mt-7">RESPONSIBILITIES</p>
-      <ul className="items-start text-[1rem] py-1 list-none mt-1">
+      <ul className="items-start text-[1rem] md:text-[1.25rem] py-1 list-none mt-1">
         <li>
             <span className="text-[#7e7c73] mr-2 font-bold">+</span>
             Packaged and organized to-go orders, ensuring items were correctly prepared and promptly delivered
@@ -207,7 +207,7 @@ const VerticalTabs = () => {
                    ].map((specialty) => (
                      <li
                        key={specialty}
-                       className="flex items-start text-[0.75rem] font-medium py-1 list-none list-inside "
+                       className="flex items-start text-[0.75rem] md:text-[1rem] font-medium py-1 list-none list-inside "
                      >
                         <span className="text-[#7e7c73] mr-2">+</span>
                        {specialty}
