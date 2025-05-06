@@ -3,9 +3,39 @@ import AboutSection from "./about-me";
 import RotatingSpecializations from "@/rotating-specializations";
 import CustomCursor from "@/custom-cursor";
 import VerticalTabs from "./vertical-tabs";
+import ProjectCard from "./project-card";
 
 
 export default function Home() {
+  const TradingAssistantData = {
+    title: "VIRTUAL TRADING ASSISTANT",
+    date: "MAY 2025",
+    specialties: ["SOFTWARE DEVELOPMENT", "PYTHON", "COMPUTER VISION", "OCR"],
+    description: `An automation tool designed to enhance the trading experience in a virtual game by using OCR technology to scan in-game user names. 
+      It then searches the users' inventories on a website and filters for specific items chosen by the user, with an emphasis on rarer items. 
+      This tool saves time by automating the inventory check process, quickly identifying valuable or hard-to-find items without the need for manual searches.`
+  };
+  const VisionaryPhotoboothData = {
+    title: "VISIONARY PHOTOBOOTHS",
+    date: "AUGUST 2024",
+    url: "https://visionarymi.com",
+    specialties: ["WEB DEVELOPMENT", "PAGECLOUD CMS", "UX/UI", "SEARCH ENGINE OPTIMIZATION (SEO)"],
+    description: `This project involved revamping a local photo booth website by improving its contact information and optimizing it for SEO. 
+      Clear and accessible contact details were integrated, and targeted SEO strategies were implemented to enhance visibility and search engine rankings. 
+      The result is a more user-friendly site that drives increased traffic and customer engagement.`
+  };
+  const AuditBuddyData = {
+    title: "AUDITBUDDY",
+    date: "JANUARY 2024",
+    url: "https://capstone.cse.msu.edu/2024-01/projects/urban-science/",
+    specialties: ["WEB DEVELOPMENT", "JAVASCRIPT", "REACT", "PYTHON FLASK", "FIREBASE", "OPENCV", "YOLOv3"],
+    description: `AuditBuddy is a web app that automates dealership audits for automotive brands by analyzing photos and videos to assess performance. 
+                  This eliminates the need for manual inspections, offering a more efficient and resource-effective solution. 
+                  The app generates detailed performance reports and enables users to compare data across multiple dealerships.`
+  };
+
+
+
   return (
     <div className="font-[family-name:var(--font-geist-sans)]">
      
@@ -63,122 +93,34 @@ export default function Home() {
         <div className="min-h-screen ml-10 mr-10 md:ml-25 md:mr-25 mb-5 md:mb-10">
         <h2 id="work" className="text-[2rem] md:text-[3rem] font-bold mb-5 text-center md:text-start">PORTFOLIO</h2>
 
-        <div className="flex flex-wrap justify-between">
-          <div className="w-1/1 md:w-[49.5%]">
-          <a className="h-150 md:h-125 bg-white border border-gray-300 p-5 flex flex-col items-center justify-center text-center">
-            <div>
-                <h2 className="text-2xl font-bold mb-4">VIRTUAL TRADING ASSISTANT</h2>
-                <h4>MAY 2025 - PRESENT</h4>
-                <ul className="flex flex-wrap justify-center gap-2 mt-4">
-                      {[
-                        "SOFTWARE DEVELOPMENT",
-                        "PYTHON",
-                        "COMPUTER VISION",
-                        "OCR",
-                      ].map((specialty) => (
-                        <li
-                          key={specialty}
-                          className="bg-[#66615C] text-white text-xs font-medium px-3 py-1"
-                        >
-                          {specialty}
-                        </li>
-                      ))}
-                    </ul>
-                    <p className="p-5">
-                      An automation tool designed to enhance the trading experience in a virtual game by using OCR technology to scan in-game user names. 
-                      It then searches the users' inventories on a website and filters for specific items chosen by the user, with an emphasis on rarer items. 
-                      This tool saves time by automating the inventory check process, quickly identifying valuable or hard-to-find items without the need for manual searches.
-                    </p>
-                    <a
-                      rel="noopener noreferrer"
-                      className="inline-block px-5 py-2 bg-black text-white hover:bg-[#66615C] transition mt-5"
-                    >
-                      LEARN MORE
-                    </a>
-            </div>
-            </a>
-          </div>
+        <div className="flex flex-wrap justify-between md:mt-5">
+          <ProjectCard 
+            title={TradingAssistantData.title}
+            date={TradingAssistantData.date}
+            specialties={TradingAssistantData.specialties}
+            description={TradingAssistantData.description}
+          />
 
-          <div className="w-1/1 md:w-[49.5%]">
-          <a href="https://visionarymi.com/" className="h-150 md:h-125 bg-white border border-gray-300 p-5 flex flex-col items-center justify-center text-center">
-            <div>
-                <h2 className="text-2xl font-bold mb-4">VISIONARY PHOTOBOOTHS</h2>
-                <h4>AUGUST 2024 - AUGUST 2024</h4>
-                <ul className="flex flex-wrap justify-center gap-2 mt-4">
-                      {[
-                        "WEB DEVELOPMENT",
-                        "PAGECLOUD CMS",
-                        "UX/UI",
-                        "SEARCH ENGINE OPTIMIZATION (SEO)",
-                      ].map((specialty) => (
-                        <li
-                          key={specialty}
-                          className="bg-[#66615C] text-white text-xs font-medium px-3 py-1"
-                        >
-                          {specialty}
-                        </li>
-                      ))}
-                    </ul>
-                    <p className="p-5">
-                      This project involved revamping a local photo booth website by improving its contact information and optimizing it for SEO. 
-                      Clear and accessible contact details were integrated, and targeted SEO strategies were implemented to enhance visibility and search engine rankings. 
-                      The result is a more user-friendly site that drives increased traffic and customer engagement.
-                    </p>
-
-                    <a
-                      href="https://visionarymi.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block px-5 py-2 bg-black text-white hover:bg-[#66615C] transition mt-5"
-                    >
-                      LEARN MORE
-                    </a>
-            </div>
-            </a>
-          </div>
+          <ProjectCard 
+            title={VisionaryPhotoboothData.title}
+            date={VisionaryPhotoboothData.date}
+            url={VisionaryPhotoboothData.url}
+            specialties={VisionaryPhotoboothData.specialties}
+            description={VisionaryPhotoboothData.description}
+          />
         </div>
 
-        <div className="flex justify-start mt-5">
-        <a href="https://capstone.cse.msu.edu/2024-01/projects/urban-science/" className="w-1/1 md:w-[49.5%] h-150 md:h-125 bg-white border border-gray-300 p-5 flex flex-col items-center justify-center text-center">
-          <div>
-              <h2 className="text-2xl font-bold mb-4">AUDITBUDDY</h2>
-              <h4>AUGUST 2024 - AUGUST 2024</h4>
-              <ul className="flex flex-wrap justify-center gap-2 mt-4">
-                  {[
-                    "WEB DEVELOPMENT",
-                    "JAVASCRIPT",
-                    "REACT",
-                    "PYTHON FLASK",
-                    "FIREBASE",
-                    "YOLOv3"
-                  ].map((specialty) => (
-                    <li
-                      key={specialty}
-                      className="bg-[#66615C] text-white text-xs font-medium px-3 py-1"
-                    >
-                      {specialty}
-                    </li>
-                  ))}
-                </ul>
-                <p className="p-5">
-                  AuditBuddy is a web app that automates dealership audits for automotive brands by analyzing photos and videos to assess performance. 
-                  This eliminates the need for manual inspections, offering a more efficient and resource-effective solution. 
-                  The app generates detailed performance reports and enables users to compare data across multiple dealerships.
-                </p>
-                <a
-                  href="https://capstone.cse.msu.edu/2024-01/projects/urban-science/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-5 py-2 bg-black text-white hover:bg-[#66615C] transition mt-5"
-                >
-                  LEARN MORE
-                </a>
+        <div className="flex flex-wrap justify-between md:mt-5">
+        <ProjectCard 
+            title={AuditBuddyData.title}
+            date={AuditBuddyData.date}
+            url={AuditBuddyData.url}
+            specialties={AuditBuddyData.specialties}
+            description={AuditBuddyData.description}
+          />
           </div>
-          </a>
-        </div>
         </div>
       </main>
-
 
       <footer className="row-start-3 flex gap-6 flex-wrap mt-15 mb-0 md:mt-25 md:mb-5 ml-15">
       </footer>
