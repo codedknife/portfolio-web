@@ -7,7 +7,7 @@
 }
 
 html {
-  scroll-padding-top: 65px;
+  scroll-padding-top: 100px;
 }
 
 @theme inline {
@@ -74,7 +74,7 @@ a, button {
 
 .img-background {
   background-color: #171717;
-  min-height: 100%;
+  opacity: 10%;
 }
 
 .project-background {
@@ -85,10 +85,6 @@ a, button {
 
 .project-name {
   font-size: 1.5rem;
-}
-
-.job-card {
-  background-color: #171717;
 }
 
 .scroll-button {

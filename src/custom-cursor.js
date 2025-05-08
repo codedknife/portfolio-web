@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 
-export default function CustomCursor() {
+const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hovered, setHovered] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
@@ -80,3 +80,5 @@ export default function CustomCursor() {
     </div>
   );
 }
+
+export default CustomCursor;

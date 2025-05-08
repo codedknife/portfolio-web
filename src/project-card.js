@@ -9,11 +9,11 @@ const ProjectCard = ({ title, date, url, specialties, description }) => {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:bg-[#66615C]/10 transition h-150 md:h-125 bg-white border border-gray-300 p-5 flex flex-col items-center justify-center text-center"
+        className="hover:bg-[#66615C]/10 transition md:h-[50vh] bg-white border border-gray-300 p-5 flex flex-col items-center justify-center text-center"
       >
         <div>
           <h2 className="text-2xl font-bold mb-4">{title}</h2>
-          <h4>{date}</h4>
+          <h3>{date}</h3>
           <ul className="flex flex-wrap justify-center gap-2 mt-4">
             {specialties.map((specialty) => (
               <li
