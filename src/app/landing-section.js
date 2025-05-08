@@ -11,8 +11,8 @@ const LandingSection = () => {
   }, []);
 
   return (
-    <div className="relative grid grid-cols-1 min-h-screen place-items-center px-1 md:px-3">
-      <div className="relative justify-center flex flex-col gap-4">
+    <div id='landing' className="relative grid grid-cols-1 min-h-screen place-items-center px-5 md:px-3">
+      <div className="relative justify-center flex flex-col">
 
         {/* GREETING */}
         <p
@@ -57,7 +57,7 @@ const LandingSection = () => {
             VIEW RESUME
           </a>
 
-          <div className="w-0 h-0 border-l-8 mt-25 border-r-8 border-b-0 border-t-8 border-transparent border-t-black"></div>
+          <div className="w-0 h-0 border-l-8 mt-20 border-r-8 border-b-0 border-t-8 border-transparent border-t-black"></div>
         </div>
 
       </div>

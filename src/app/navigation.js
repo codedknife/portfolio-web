@@ -9,13 +9,18 @@ export default function Navigation() {
     <>
         <div className="sm:hidden fixed top-0 left-0 w-full z-50 bg-white">
             {/* TOGGLE */}
-            <div className="flex justify-end p-5">
-            <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-black text-2xl focus:outline-none cursor-pointer"
-            >
-                {isMenuOpen ? "✕" : "☰"}
-            </button>
+            <div className="flex items-center justify-between ml-5">
+                <div className="flex items-center space-x-2">
+                    <a href="#landing" className="font-bold text-lg">&lt;/ash&gt;</a>
+                </div>
+                <div className="flex justify-end p-5">
+                <button
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    className="text-black text-2xl focus:outline-none cursor-pointer"
+                >
+                    {isMenuOpen ? "✕" : "☰"}
+                </button>
+                </div>
             </div>
 
             {/* MOBILE MENU */}
@@ -40,12 +45,16 @@ export default function Navigation() {
         </div>
 
         {/* DESKTOP MENU */}
-        <nav className="navigation mb-10 hidden sm:block">
-            <ul className="nav-list flex space-x-10">
-                <li><a href="#about" className="nav-link">ABOUT</a></li>
-                <li><a href="#experience" className="nav-link">EXPERIENCE</a></li>
-                <li><a href="#work" className="nav-link">PORTFOLIO</a></li>
-            </ul>
+        <nav className="navigation mb-10 hidden sm:flex items-center justify-between">
+        <div className="flex items-center space-x-2">
+            <a href="#landing" className="font-bold text-lg">&lt;/ash&gt;</a>
+        </div>
+
+        <ul className="nav-list flex space-x-10">
+            <li><a href="#about" className="nav-link">ABOUT</a></li>
+            <li><a href="#experience" className="nav-link">EXPERIENCE</a></li>
+            <li><a href="#work" className="nav-link">PORTFOLIO</a></li>
+        </ul>
         </nav>
     </>
   );

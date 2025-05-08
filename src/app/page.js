@@ -62,7 +62,7 @@ export default function Home() {
         
          {/* EXPERIENCE SECTION*/}
         <div className="min-h-screen ml-10 mr-10 md:ml-25 md:mr-25 mb-5">
-          <h2 id="experience" className="text-[2rem] md:text-[3rem] font-bold mb-5 text-center md:text-start">EXPERIENCE</h2>
+          <h2 id="experience" className="text-[2rem] md:text-[3rem] font-bold mb-5 mt-5 text-center md:text-start">EXPERIENCE</h2>
 
 
               {/* <VerticalTabs/> */}
