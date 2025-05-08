@@ -19,11 +19,11 @@ export default function Home() {
     // simulate loading delay
     const animationTimer = setTimeout(() => {
       setAnimation(true);
-    }, 1000);
+    }, 2000);
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 3000);
 
     return () => {
       clearTimeout(animationTimer);
@@ -39,7 +39,7 @@ export default function Home() {
       }`}
     >
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <h1 className="text-6xl font-extrabold text-white">
+        <h1 className="text-6xl font-extrabold font-mono text-white typing-text">
           &lt;/ash&gt;
         </h1>
       </div>
