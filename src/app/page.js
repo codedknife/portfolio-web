@@ -1,12 +1,52 @@
+'use client';
+
 import Navigation from "./navigation";
 import AboutSection from "./about-section";
 import LandingSection from "./landing-section";
 import ExperienceSection from "./experience-section";
 import CustomCursor from "@/custom-cursor";
 import ProjectCard from "@/project-card";
-
+import { useState, useEffect } from "react";
 
 export default function Home() {
+
+  
+  const [loading, setLoading] = useState(true);
+  const [animation, setAnimation] = useState(false);
+
+  useEffect(() => {
+
+    // simulate loading delay
+    const animationTimer = setTimeout(() => {
+      setAnimation(true);
+    }, 1000);
+
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => {
+      clearTimeout(animationTimer);
+      clearTimeout(timer);
+    };
+  }, []);
+
+  if (loading) {
+    return (
+      <div
+      className={`fixed top-0 left-0 w-full h-screen bg-[#66615C] z-50 transition-transform duration-1000 ease-in-out ${
+        animation ? "translate-y-[-100%]" : "translate-y-0"
+      }`}
+    >
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <h1 className="text-6xl font-extrabold text-white">
+          &lt;/ash&gt;
+        </h1>
+      </div>
+    </div>
+    );
+  }
+
   const TradingAssistantData = {
     title: "VIRTUAL TRADING ASSISTANT",
     date: "MAY 2025",

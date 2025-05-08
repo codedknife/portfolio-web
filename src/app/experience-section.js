@@ -34,7 +34,7 @@ const ExperienceSection = () => {
             date={WebContentAdministratorData.date}
         />
 
-        <div className=" mb-5 relative bottom-0 left-1/2 transform -translate-x-1/2 h-3 w-0.5 bg-gray-300"></div>
+        <div className=" mb-3 relative bottom-0 left-1/2 transform -translate-x-1/2 h-3 w-0.5 bg-gray-300"></div>
 
         <JobCard 
             title={StudentFrontendWebAssistantData.title}
@@ -42,7 +42,7 @@ const ExperienceSection = () => {
             date={StudentFrontendWebAssistantData.date}
         />
 
-        <div className=" mb-5 relative bottom-0 left-1/2 transform -translate-x-1/2 h-3 w-0.5 bg-gray-300"></div>
+        <div className=" mb-3 relative bottom-0 left-1/2 transform -translate-x-1/2 h-3 w-0.5 bg-gray-300"></div>
 
         <JobCard 
             title={UndergraduateLearningAssistantData.title}
@@ -50,7 +50,7 @@ const ExperienceSection = () => {
             date={UndergraduateLearningAssistantData.date}
         />
 
-        <div className=" mb-5 relative bottom-0 left-1/2 transform -translate-x-1/2 h-3 w-0.5 bg-gray-300"></div>
+        <div className=" mb-3 relative bottom-0 left-1/2 transform -translate-x-1/2 h-3 w-0.5 bg-gray-300"></div>
 
           <JobCard 
             title={InformationTechnologyInternData.title}

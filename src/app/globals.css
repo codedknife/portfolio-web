@@ -68,19 +68,9 @@ a, button {
   margin: 0 2.5rem;                
 }
 
-.job-title {
-  font-size: 1.20rem;
-}
-
 .img-background {
   background-color: #171717;
   opacity: 10%;
-}
-
-.project-background {
-  width: 70%;
-  height: 100%;
-  background-color: #171717;
 }
 
 .project-name {
@@ -93,8 +83,4 @@ a, button {
 
 .social {
   margin-top: 25rem;
-}
-
-.line {
-  border-radius: 5%;
 }

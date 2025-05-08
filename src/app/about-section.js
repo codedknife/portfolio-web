@@ -5,13 +5,13 @@ import React from 'react';
 const AboutSection = () => {
   return (
     <div id="about" className="min-h-screen grid justify-items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 ml-10 mr-10 md:ml-25 md:mr-25">
+      <div className="grid grid-cols-1 md:grid-cols-2 ml-10 mr-10 sm:ml-25 sm:mr-25">
 
         {/* BIO */}
         <div className="order-2 md:order-1">
             <h2 className="text-[2rem] md:text-[3rem] font-bold mb-5 md:mt-0 text-center md:text-start">ABOUT</h2>
             {/* SUBHEADING */}
-            <h3 className="text-[1.25rem] mb-[1rem] md:text-[1.50rem] font-bold text-[#66615C]"> A developer who creates meaningful digital experiences with a focus on design, usability, and clean code.</h3>
+            <h3 className="text-[1.25rem] mb-[1rem] sm:text-[1.50rem] font-bold text-[#66615C]"> A developer who creates meaningful digital experiences with a focus on design, usability, and clean code.</h3>
             <p className="text-justify text-[1rem]">
                 I graduated from Michigan State University in Spring 2024 with a bachelor's degree in Computer Science and a minor in Business. 
                 I love using modern tools and frameworks to bring creative ideas to life.

@@ -20,7 +20,7 @@ const LandingSection = () => {
             animate ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-25'
           }`}
         >
-          <span className="text-[2rem] md:text-[3rem] text-left mt-25 md:mt-0 mb-5 md:mb-2 text-[#66615C]">
+          <span className="text-[2rem] sm:text-[3rem] text-left mt-25 md:mt-0 mb-5 md:mb-2 text-[#66615C]">
             HI, I'M
           </span>
         </p>
@@ -29,7 +29,7 @@ const LandingSection = () => {
         <h1
           className={`transition-all duration-700 ease-out delay-200 transform ${
             animate ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-25'
-          } text-[3rem] sm:text-xl md:text-[7.5rem] text-center name font-bold`}
+          } text-[3rem] text-xl md:text-[7.5rem] text-center name font-bold`}
         >
           ASHLEY TRAN.
         </h1>

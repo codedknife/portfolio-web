@@ -45,8 +45,8 @@ export default function Navigation() {
         </div>
 
         {/* DESKTOP MENU */}
-        <nav className="navigation mb-10 hidden sm:flex items-center justify-between">
-        <div className="flex items-center space-x-2">
+        <nav className="navigation mb-10 hidden ml-10 sm:flex items-center justify-between">
+        <div className="flex items-center">
             <a href="#landing" className="font-bold text-lg">&lt;/ash&gt;</a>
         </div>
 

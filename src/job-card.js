@@ -4,13 +4,17 @@ import React from 'react';
 
 const JobCard = ({ title, employer, date }) => {
   return (
-    <div className="w-1/1 md:w-[100%] pb-5 md:pb-5">
-        <div className="transition h-[40vh] md:h-[15vh] bg-white border border-gray-300 p-5 flex flex-col items-center justify-center text-center">
-          <h2 className="text-2xl font-bold mb-4">{title}</h2>
-          <h3>{employer}</h3>
-          <h4>{date}</h4>
+    <div className="w-full mb-3">
+      <div className="transition bg-white border border-gray-300 p-3 flex flex-col md:flex-row items-center md:items-start justify-between text-center md:text-left md:h-[12vh]">
+        <div className="md:w-2/3">
+          <h2 className="text-2xl font-bold mb-1">{title}</h2>
+          <h4 className="text-sm text-gray-600">{date}</h4>
         </div>
-  
+        <div className="md:w-1/3 mt-3 md:mt-0 text-gray-700 font-medium text-base md:text-right">
+          {employer}
+        </div>
+        
+      </div>
     </div>
   );
 };
