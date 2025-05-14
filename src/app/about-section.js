@@ -30,8 +30,7 @@ const AboutSection = () => {
             <div className="mt-10 grid justify-items-center md:justify-items-start">
                 <a
                     href="mailto:iashleytran@gmail.com"
-                    className="flex h-[60px] w-[120px] md:h-[120px] bg-[#66615C] text-white items-center justify-center 
-                    hover:-translate-y-1 transition-all duration-300 ease-in-out "
+                    className="flex h-[60px] w-[120px] md:h-[120px] bg-[#66615C] text-white items-center justify-center cta-button"
                 >
                     CONTACT
                 </a>

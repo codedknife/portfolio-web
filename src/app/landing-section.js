@@ -11,7 +11,7 @@ const LandingSection = () => {
   }, []);
 
   return (
-    <div id='landing' className="relative grid grid-cols-1 min-h-screen place-items-center px-5 md:px-3">
+    <div id='landing' className="relative grid grid-cols-1 min-h-screen place-items-center px-5 md:px-3 mt-15">
       <div className="relative justify-center flex flex-col">
 
         {/* GREETING */}
@@ -40,7 +40,7 @@ const LandingSection = () => {
             animate ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-25'
           }`}
         >
-          <RotatingSpecializations />
+          <RotatingSpecializations/>
         </div>
 
         {/* CTA */}
@@ -50,8 +50,7 @@ const LandingSection = () => {
           }`}
         >
           <a
-            className="flex gap-2 text-center border border-solid text-background text-md p-5 min-w-35 bg-[#66615C]
-              hover:-translate-y-1 transition-all duration-300 ease-in-out"
+            className="flex gap-2 text-center border border-solid text-background text-md p-5 min-w-35 bg-[#66615C] cta-button"
             href="/resume_march2025.pdf"
           >
             VIEW RESUME

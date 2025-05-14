@@ -34,7 +34,7 @@ export default function Home() {
   if (loading) {
     return (
       <div
-      className={`fixed top-0 left-0 w-full h-screen bg-[#66615C] z-50 transition-transform duration-1000 ease-in-out ${
+      className={`fixed top-0 left-0 w-full h-screen bg-[#66615C] transition-transform duration-1000 ease-in-out ${
         animation ? "translate-y-[-100%]" : "translate-y-0"
       }`}
     >

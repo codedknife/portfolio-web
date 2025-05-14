@@ -7,55 +7,44 @@ export default function Navigation() {
 
     return (
     <>
-        <div className="sm:hidden fixed top-0 left-0 w-full z-50 bg-white">
+        <div className="fixed top-0 left-0 w-full z-50 bg-white">
             {/* TOGGLE */}
             <div className="flex items-center justify-between ml-5">
                 <div className="flex items-center space-x-2">
                     <a href="#landing" className="font-bold text-lg">&lt;/ash&gt;</a>
                 </div>
+
                 <div className="flex justify-end p-5">
                 <button
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                     className="text-black text-2xl focus:outline-none cursor-pointer"
                 >
-                    {isMenuOpen ? "✕" : "☰"}
+                    {isMenuOpen ? "✕" : 
+                    "☰"}
                 </button>
                 </div>
             </div>
 
-            {/* MOBILE MENU */}
+            {/* MENU */}
             {isMenuOpen && (
             <nav className="pb-4">
-                <ul className="items-center flex flex-col gap-4 text-center">
-                    <li><a href="#about" className="nav-link" onClick={() => setIsMenuOpen(false)}>ABOUT</a></li>
-                    <li><a href="#experience" className="nav-link" onClick={() => setIsMenuOpen(false)}>EXPERIENCE</a></li>
-                    <li><a href="#work" className="nav-link" onClick={() => setIsMenuOpen(false)}>PORTFOLIO</a></li>
-                    <div className="flex flex-col gap-5">
-                        <a href="https://github.com/codedknife">
-                            <img src="/github-mark.png" alt="GitHub Icon" className="w-5 h-5" />
+                <ul className="flex flex-col gap-4 w-full h-screen justify-center animation-slide-up gap-15">
+                    <li><a href="#about" className="nav-link text-7xl font-bold p-5 mb-1 md:ml-100" onClick={() => setIsMenuOpen(false)}>ABOUT</a></li>
+                    <li><a href="#experience" className="nav-link text-7xl font-bold p-5 mb-10 md:ml-100" onClick={() => setIsMenuOpen(false)}>EXPERIENCE</a></li>
+                    <li><a href="#work" className="nav-link text-7xl font-bold p-5 mb-10 md:ml-100" onClick={() => setIsMenuOpen(false)}>PORTFOLIO</a></li>
+                    <div className="p-5 flex flex-row gap-10 md:ml-100">
+                        <a href="https://github.com/codedknife" className="underline-link text-lg">
+                            <p className="text-2xl">↗ GitHub</p>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/ash-tran/">
-                            <img src="/linkedin.png" alt="LinkedIn Icon" className="w-5 h-5" />
+                        <a href="https://www.linkedin.com/in/ash-tran/" className="underline-link text-lg">
+                            <p className="text-2xl">↗ Linkedin</p>
                         </a>
-                    </div>
+                        </div>
                 </ul>
             </nav>
             )}
         </div>
-
-        {/* DESKTOP MENU */}
-        <nav className="navigation mb-10 hidden ml-10 sm:flex items-center justify-between">
-        <div className="flex items-center">
-            <a href="#landing" className="font-bold text-lg">&lt;/ash&gt;</a>
-        </div>
-
-        <ul className="nav-list flex space-x-10">
-            <li><a href="#about" className="nav-link">ABOUT</a></li>
-            <li><a href="#experience" className="nav-link">EXPERIENCE</a></li>
-            <li><a href="#work" className="nav-link">PORTFOLIO</a></li>
-        </ul>
-        </nav>
     </>
   );
 }

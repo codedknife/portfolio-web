@@ -9,7 +9,7 @@ const ProjectCard = ({ title, date, url, specialties, description }) => {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:bg-[#66615C]/10 transition md:h-[50vh] bg-white border border-gray-300 p-5 flex flex-col items-center justify-center text-center"
+        className="project-card md:h-[50vh] bg-white border border-gray-300 p-5 flex flex-col items-center justify-center text-center"
       >
         <div>
           <h2 className="text-2xl font-bold mb-4">{title}</h2>

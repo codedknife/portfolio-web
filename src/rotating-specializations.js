@@ -20,7 +20,7 @@ export default function RotatingSpecializations() {
         setIndex((prevIndex) => (prevIndex + 1) % skills.length);
         setFade(true);
       }, 300);
-    }, 2500);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
