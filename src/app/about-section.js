@@ -11,7 +11,7 @@ const AboutSection = () => {
         <div className="order-2 md:order-1">
             <h2 className="text-[2rem] md:text-[3.5rem] font-bold mb-5 md:mt-0 text-start">ABOUT</h2>
             {/* SUBHEADING */}
-            <h3 className="text-[1.50rem] mb-[1rem] md:text-[1.75rem] font-bold text-[#66615C]"> A developer who creates meaningful digital experiences with a focus on design, usability, and clean code.</h3>
+            <h3 className="text-[1.50rem] mb-[1rem] md:text-[1.75rem] font-bold text-[#66615C]"> A developer who focuses on design, usability, and clean code.</h3>
             <p className="text-justify text-[1rem]">
             I’m originally from Lansing, MI, and I graduated from Michigan State University in Spring 2024 with a degree in Computer Science and a minor in Business. I love using modern tools and frameworks to bring creative ideas to life.
             </p>

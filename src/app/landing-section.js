@@ -29,7 +29,7 @@ const LandingSection = () => {
         <h1
           className={`transition-all duration-700 ease-out delay-200 transform ${
             animate ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-25'
-          } text-[3.5rem] text-xl md:text-[7.5rem] text-center name font-bold`}
+          } text-[4.5rem] md:text-[7.5rem] leading-[1.1] text-center font-bold`}
         >
           ASHLEY TRAN.
         </h1>
