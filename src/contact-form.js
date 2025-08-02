@@ -50,10 +50,10 @@ export default function ContactFooter() {
         </svg>
 
         </div>
-            <footer id="footer" className="bg-[#f5f5f5] pt-15 pb-5 px-5 md:px-12">
+            <footer id="footer" className="bg-[#f5f5f5] pt-10 pb-5 px-5 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2">
                 <div>
-                    <h2 className="text-[7.5rem] font-bold">CONTACT ME</h2>
+                    <h2 className="text-[4rem] md:text-[7.5rem] font-bold">CONTACT ME</h2>
                     <div className="flex flex-row gap-10">
                         <a href="https://github.com/codedknife" className="underline-link text-lg">
                             <p className="text-2xl">↗ GitHub</p>
