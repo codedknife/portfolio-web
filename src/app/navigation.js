@@ -34,11 +34,11 @@ export default function Navigation() {
                     <li><a href="#work" className="nav-link text-5xl md:text-7xl font-bold m-5 md:pl-5 mb-10 md:ml-100" onClick={() => setIsMenuOpen(false)}>PORTFOLIO</a></li>
                     <div className="p-5 flex flex-row gap-10 md:ml-100">
                         <a href="https://github.com/codedknife" className="underline-link text-lg">
-                            <p className="text-2xl">↗ GitHub</p>
+                            <p className="text-2xl"><span className="font-family: Arial, sans-serif;">↗</span> GitHub</p>
                         </a>
 
                         <a href="https://www.linkedin.com/in/ash-tran/" className="underline-link text-lg">
-                            <p className="text-2xl">↗ LinkedIn</p>
+                            <p className="text-2xl"><span className="font-family: Arial, sans-serif;">↗</span> LinkedIn</p>
                         </a>
                         </div>
                 </ul>

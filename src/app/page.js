@@ -52,7 +52,7 @@ export default function Home() {
     title: "Virtual Trading Assistant",
     date: "MAY 2025",
     type: "SOFTWARE",
-    specialties: ["PYTHON", "COMPUTER VISION", "OCR"],
+    specialties: ["PYTHON", "OPENCV", "TKINTER"],
     description: `Designed to enhance the trading experience in a virtual game by using OCR technology to scan in-game user names. 
       It then searches the users' inventories on a website and filters for specific items chosen by the user, with an emphasis on rarer items. 
       This tool saves time by automating the inventory check process, quickly identifying valuable or hard-to-find items without the need for manual searches.`
@@ -62,7 +62,7 @@ export default function Home() {
     date: "AUGUST 2024",
     type: "UX/UI",
     url: "https://visionarymi.com",
-    specialties: ["PAGECLOUD CMS", "SEARCH ENGINE OPTIMIZATION (SEO)"],
+    specialties: ["PAGECLOUD CMS"],
     description: `Involved revamping a local photo booth website by improving its contact information and optimizing it for SEO. 
       Clear and accessible contact details were integrated, and targeted SEO strategies were implemented to enhance visibility and search engine rankings. 
       The result is a more user-friendly site that drives increased traffic and customer engagement.`

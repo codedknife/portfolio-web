@@ -26,7 +26,7 @@ const ProjectCard = ({ title, date, type, url, specialties, description }) => {
           </p>
         </div>
         <span className="absolute bottom-3 right-4 text-sm text-[#66615C] md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          ↗ View Project
+          <span className="font-family: Arial, sans-serif;">↗</span> View Project
         </span>
       </a>
     </div>

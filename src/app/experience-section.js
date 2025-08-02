@@ -10,7 +10,7 @@ const ExperienceSection = () => {
         date: "MAY 2024 - PRESENT",
       };
       const StudentFrontendWebAssistantData = {
-        title: "Student Frontend Web Assistant",
+        title: "Student Front-End Web Assistant",
         employer: "MSU COLLEGE OF ENGINEERING",
         date: "MAY 2023 - MAY 2024",
       };

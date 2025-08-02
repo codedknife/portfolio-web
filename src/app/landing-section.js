@@ -51,9 +51,9 @@ const LandingSection = () => {
         >
           <a
             className="flex gap-2 text-center border border-solid text-background text-md p-5 min-w-45 justify-center bg-[#66615C] cta-button"
-            href="https://www.linkedin.com/in/ash-tran/overlay/1753803698510/single-media-viewer/?profileId=ACoAAEMWXfEBHC1td9lXyyvgjuUgH12Igmw7kMI"
+            href="/ash-tran-resume.pdf"
           >
-            VIEW RESUME
+            <span className="font-family: Arial, sans-serif;">↗</span> VIEW RESUME
           </a>
 
           <div className="w-0 h-0 border-l-8 mt-20 border-r-8 border-b-0 border-t-8 border-transparent border-t-black"></div>

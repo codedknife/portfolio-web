@@ -56,11 +56,11 @@ export default function ContactFooter() {
                     <h2 className="text-[3rem] md:text-[7.5rem] font-bold">CONTACT ME</h2>
                     <div className="flex flex-row gap-10">
                         <a href="https://github.com/codedknife" className="underline-link text-lg">
-                            <p className="text-2xl">↗ GitHub</p>
+                            <p className="text-2xl"><span className="font-family: Arial, sans-serif;">↗</span> GitHub</p>
                         </a>
 
                         <a href="https://www.linkedin.com/in/ash-tran/" className="underline-link text-lg">
-                            <p className="text-2xl">↗ LinkedIn</p>
+                            <p className="text-2xl"><span className="font-family: Arial, sans-serif;">↗</span> LinkedIn</p>
                         </a>
                     </div>
                 </div>
