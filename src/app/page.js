@@ -51,7 +51,8 @@ export default function Home() {
   const TradingAssistantData = {
     title: "VIRTUAL TRADING ASSISTANT",
     date: "MAY 2025",
-    specialties: ["SOFTWARE DEVELOPMENT", "PYTHON", "COMPUTER VISION", "OCR"],
+    type: "SOFTWARE DEVELOPMENT",
+    specialties: ["PYTHON", "COMPUTER VISION", "OCR"],
     description: `An automation tool designed to enhance the trading experience in a virtual game by using OCR technology to scan in-game user names. 
       It then searches the users' inventories on a website and filters for specific items chosen by the user, with an emphasis on rarer items. 
       This tool saves time by automating the inventory check process, quickly identifying valuable or hard-to-find items without the need for manual searches.`
@@ -59,8 +60,9 @@ export default function Home() {
   const VisionaryPhotoboothData = {
     title: "VISIONARY PHOTOBOOTHS",
     date: "AUGUST 2024",
+    type: "WEB DEVELOPMENT",
     url: "https://visionarymi.com",
-    specialties: ["WEB DEVELOPMENT", "PAGECLOUD CMS", "UX/UI", "SEARCH ENGINE OPTIMIZATION (SEO)"],
+    specialties: ["PAGECLOUD CMS", "UX/UI", "SEARCH ENGINE OPTIMIZATION (SEO)"],
     description: `This project involved revamping a local photo booth website by improving its contact information and optimizing it for SEO. 
       Clear and accessible contact details were integrated, and targeted SEO strategies were implemented to enhance visibility and search engine rankings. 
       The result is a more user-friendly site that drives increased traffic and customer engagement.`
@@ -68,8 +70,9 @@ export default function Home() {
   const AuditBuddyData = {
     title: "AUDITBUDDY",
     date: "JANUARY 2024",
+    type: "WEB DEVELOPMENT",
     url: "https://capstone.cse.msu.edu/2024-01/projects/urban-science/",
-    specialties: ["WEB DEVELOPMENT", "JAVASCRIPT", "REACT", "PYTHON FLASK", "FIREBASE", "OPENCV"],
+    specialties: ["JAVASCRIPT", "REACT", "PYTHON FLASK", "FIREBASE", "OPENCV"],
     description: `AuditBuddy is a web app that automates dealership audits for automotive brands by analyzing photos and videos to assess performance. 
                   This eliminates the need for manual inspections, offering a more efficient and resource-effective solution. 
                   The app generates detailed performance reports and enables users to compare data across multiple dealerships.`
@@ -104,9 +107,6 @@ export default function Home() {
          {/* EXPERIENCE SECTION*/}
         <div className="min-h-screen ml-10 mr-10 md:ml-25 md:mr-25 mb-5">
           <h2 id="experience" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-5 text-start">EXPERIENCE</h2>
-
-
-              {/* <VerticalTabs/> */}
               <ExperienceSection/>
         </div>
 
@@ -118,6 +118,7 @@ export default function Home() {
           <ProjectCard 
             title={TradingAssistantData.title}
             date={TradingAssistantData.date}
+            type={TradingAssistantData.type}
             specialties={TradingAssistantData.specialties}
             description={TradingAssistantData.description}
           />
@@ -125,6 +126,7 @@ export default function Home() {
           <ProjectCard 
             title={VisionaryPhotoboothData.title}
             date={VisionaryPhotoboothData.date}
+            type={VisionaryPhotoboothData.type}
             url={VisionaryPhotoboothData.url}
             specialties={VisionaryPhotoboothData.specialties}
             description={VisionaryPhotoboothData.description}
@@ -135,6 +137,7 @@ export default function Home() {
         <ProjectCard 
             title={AuditBuddyData.title}
             date={AuditBuddyData.date}
+            type={AuditBuddyData.type}
             url={AuditBuddyData.url}
             specialties={AuditBuddyData.specialties}
             description={AuditBuddyData.description}

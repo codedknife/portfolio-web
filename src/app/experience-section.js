@@ -25,38 +25,28 @@ const ExperienceSection = () => {
         date: "MAY 2022 - AUG 2022",
       };
 
+      const jobs = [
+        WebContentAdministratorData,
+        StudentFrontendWebAssistantData,
+        UndergraduateLearningAssistantData,
+        InformationTechnologyInternData,
+      ];
 
   return (
     <div>
-        <JobCard 
-            title={WebContentAdministratorData.title}
-            employer={WebContentAdministratorData.employer}
-            date={WebContentAdministratorData.date}
-        />
-
-        <div className=" mb-3 relative bottom-0 left-1/2 transform -translate-x-1/2 h-3 w-0.5 bg-gray-300"></div>
-
-        <JobCard 
-            title={StudentFrontendWebAssistantData.title}
-            employer={StudentFrontendWebAssistantData.employer}
-            date={StudentFrontendWebAssistantData.date}
-        />
-
-        <div className=" mb-3 relative bottom-0 left-1/2 transform -translate-x-1/2 h-3 w-0.5 bg-gray-300"></div>
-
-        <JobCard 
-            title={UndergraduateLearningAssistantData.title}
-            employer={UndergraduateLearningAssistantData.employer}
-            date={UndergraduateLearningAssistantData.date}
-        />
-
-        <div className=" mb-3 relative bottom-0 left-1/2 transform -translate-x-1/2 h-3 w-0.5 bg-gray-300"></div>
-
-          <JobCard 
-            title={InformationTechnologyInternData.title}
-            employer={InformationTechnologyInternData.employer}
-            date={InformationTechnologyInternData.date}
-        />
+      {jobs.map((job, index) => (
+        <div key={index}>
+          <JobCard
+            title={job.title}
+            employer={job.employer}
+            date={job.date}
+          />
+  
+          {index !== jobs.length - 1 && (
+            <div className="mb-3 relative bottom-0 left-1/2 transform -translate-x-1/2 h-3 w-0.5 bg-gray-300"></div>
+          )}
+        </div>
+      ))}
     </div>
   );
 };

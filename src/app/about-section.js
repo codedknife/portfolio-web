@@ -28,7 +28,7 @@ const AboutSection = () => {
             <div className="mt-10">
                 <a
                     href="#footer"
-                    className="flex font-bold text-[2rem] text-[#66615C] cta-button"
+                    className="flex font-bold text-[1.5rem] md:text-[2rem] text-[#66615C] cta-button"
                 >
                   ↗ CONTACT ME
                  
@@ -39,7 +39,7 @@ const AboutSection = () => {
 
 
         {/* IMG */}
-        <div className="relative img-background w-full md:w-[82%] h-[35vh] md:h-[80vh] md:ml-25 mb-10 mt-5 md:mt-0 md:mb-0 order-1 md:order-2">
+        <div className="relative img-background w-full md:w-[75vh] h-[35vh] md:h-[75vh] md:ml-25 mb-10 mt-5 md:mt-0 md:mb-0 order-1 md:order-2">
           <div className="absolute -top-5 -left-5 w-25 h-25 border-t-3 border-l-3 border-solid border-[#66615C]"></div>
           <img
             src="/roblox-headshot.png"

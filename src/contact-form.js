@@ -63,12 +63,9 @@ export default function ContactFooter() {
                             <p className="text-2xl">↗ Linkedin</p>
                         </a>
                     </div>
-                    <div className="mt-25">
-                        <p>DEVELOPED AND DESIGNED BY <span className="font-semibold">ASHLEY TRAN</span>.</p>
-                    </div>
                 </div>
 
-                <div className="flex justify-center w-full">
+                <div className="flex justify-center w-full mt-5 md:mt-0">
                     <form onSubmit={onSubmit} className="max-w-sm flex flex-col gap-4 w-full">
                     <input
                         type="text"
@@ -103,6 +100,9 @@ export default function ContactFooter() {
                     </form>
                 </div>
                 </div>
+                <div className="mt-5 md:-mt-10 mb-10">
+                        <p>DEVELOPED AND DESIGNED BY <span className="font-semibold">ASHLEY TRAN</span>.</p>
+                    </div>
             </footer>
     </>
   );

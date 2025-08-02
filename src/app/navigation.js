@@ -29,9 +29,9 @@ export default function Navigation() {
             {isMenuOpen && (
             <nav className="pb-4">
                 <ul className="flex flex-col gap-4 w-full h-screen justify-center animation-slide-up gap-15">
-                    <li><a href="#about" className="nav-link text-7xl font-bold pl-5 m-5 mb-1 md:ml-100" onClick={() => setIsMenuOpen(false)}>ABOUT</a></li>
-                    <li><a href="#experience" className="nav-link text-7xl font-bold pl-5 m-5 mb-10 md:ml-100" onClick={() => setIsMenuOpen(false)}>EXPERIENCE</a></li>
-                    <li><a href="#work" className="nav-link text-7xl font-bold m-5 pl-5 mb-10 md:ml-100" onClick={() => setIsMenuOpen(false)}>PORTFOLIO</a></li>
+                    <li><a href="#about" className="nav-link text-5xl md:text-7xl font-bold pl-5 m-5 mb-1 md:ml-100" onClick={() => setIsMenuOpen(false)}>ABOUT</a></li>
+                    <li><a href="#experience" className="nav-link text-5xl md:text-7xl font-bold pl-5 m-5 mb-10 md:ml-100" onClick={() => setIsMenuOpen(false)}>EXPERIENCE</a></li>
+                    <li><a href="#work" className="nav-link text-5xl md:text-7xl font-bold m-5 pl-5 mb-10 md:ml-100" onClick={() => setIsMenuOpen(false)}>PORTFOLIO</a></li>
                     <div className="p-5 flex flex-row gap-10 md:ml-100">
                         <a href="https://github.com/codedknife" className="underline-link text-lg">
                             <p className="text-2xl">↗ GitHub</p>
