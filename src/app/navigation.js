@@ -38,7 +38,7 @@ export default function Navigation() {
                         </a>
 
                         <a href="https://www.linkedin.com/in/ash-tran/" className="underline-link text-lg">
-                            <p className="text-2xl">↗ Linkedin</p>
+                            <p className="text-2xl">↗ LinkedIn</p>
                         </a>
                         </div>
                 </ul>

@@ -49,31 +49,31 @@ export default function Home() {
   }
 
   const TradingAssistantData = {
-    title: "VIRTUAL TRADING ASSISTANT",
+    title: "Virtual Trading Assistant",
     date: "MAY 2025",
-    type: "SOFTWARE DEVELOPMENT",
+    type: "SOFTWARE",
     specialties: ["PYTHON", "COMPUTER VISION", "OCR"],
-    description: `An automation tool designed to enhance the trading experience in a virtual game by using OCR technology to scan in-game user names. 
+    description: `Designed to enhance the trading experience in a virtual game by using OCR technology to scan in-game user names. 
       It then searches the users' inventories on a website and filters for specific items chosen by the user, with an emphasis on rarer items. 
       This tool saves time by automating the inventory check process, quickly identifying valuable or hard-to-find items without the need for manual searches.`
   };
   const VisionaryPhotoboothData = {
-    title: "VISIONARY PHOTOBOOTHS",
+    title: "Visionary Photobooths",
     date: "AUGUST 2024",
-    type: "WEB DEVELOPMENT",
+    type: "UX/UI",
     url: "https://visionarymi.com",
-    specialties: ["PAGECLOUD CMS", "UX/UI", "SEARCH ENGINE OPTIMIZATION (SEO)"],
-    description: `This project involved revamping a local photo booth website by improving its contact information and optimizing it for SEO. 
+    specialties: ["PAGECLOUD CMS", "SEARCH ENGINE OPTIMIZATION (SEO)"],
+    description: `Involved revamping a local photo booth website by improving its contact information and optimizing it for SEO. 
       Clear and accessible contact details were integrated, and targeted SEO strategies were implemented to enhance visibility and search engine rankings. 
       The result is a more user-friendly site that drives increased traffic and customer engagement.`
   };
   const AuditBuddyData = {
-    title: "AUDITBUDDY",
+    title: "AuditBuddy",
     date: "JANUARY 2024",
-    type: "WEB DEVELOPMENT",
+    type: "WEB",
     url: "https://capstone.cse.msu.edu/2024-01/projects/urban-science/",
     specialties: ["JAVASCRIPT", "REACT", "PYTHON FLASK", "FIREBASE", "OPENCV"],
-    description: `AuditBuddy is a web app that automates dealership audits for automotive brands by analyzing photos and videos to assess performance. 
+    description: `AuditBuddy automates dealership audits for automotive brands by analyzing photos and videos to assess performance. 
                   This eliminates the need for manual inspections, offering a more efficient and resource-effective solution. 
                   The app generates detailed performance reports and enables users to compare data across multiple dealerships.`
   };
@@ -105,45 +105,51 @@ export default function Home() {
         <AboutSection/>
         
          {/* EXPERIENCE SECTION*/}
-        <div className="min-h-screen ml-10 mr-10 md:ml-25 md:mr-25 mb-5">
-          <h2 id="experience" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-5 text-start">EXPERIENCE</h2>
-              <ExperienceSection/>
-        </div>
-
-        {/* PORTFOLIO SECTION*/}
-        <div className="min-h-screen ml-10 mr-10 md:ml-25 md:mr-25">
-        <h2 id="work" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-10 md:mt-0 text-start">PORTFOLIO</h2>
-
-        <div className="flex flex-wrap justify-between">
-          <ProjectCard 
-            title={TradingAssistantData.title}
-            date={TradingAssistantData.date}
-            type={TradingAssistantData.type}
-            specialties={TradingAssistantData.specialties}
-            description={TradingAssistantData.description}
-          />
-
-          <ProjectCard 
-            title={VisionaryPhotoboothData.title}
-            date={VisionaryPhotoboothData.date}
-            type={VisionaryPhotoboothData.type}
-            url={VisionaryPhotoboothData.url}
-            specialties={VisionaryPhotoboothData.specialties}
-            description={VisionaryPhotoboothData.description}
-          />
-        </div>
-
-        <div className="flex flex-wrap justify-between md:mt-5">
-        <ProjectCard 
-            title={AuditBuddyData.title}
-            date={AuditBuddyData.date}
-            type={AuditBuddyData.type}
-            url={AuditBuddyData.url}
-            specialties={AuditBuddyData.specialties}
-            description={AuditBuddyData.description}
-          />
+        <div className="min-h-screen grid place-items-center w-full">
+          <div className="max-w-[85rem] w-full px-5 mb-10">
+            <h2 id="experience" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-5 text-start">EXPERIENCE</h2>
+                <ExperienceSection/>
           </div>
         </div>
+       
+
+        {/* PORTFOLIO SECTION*/}
+        <div className="min-h-screen place-items-center">
+          <div className="px-5 mb-10 w-full max-w-[85rem]">
+          <h2 id="work" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-10 md:mt-0 text-start">PORTFOLIO</h2>
+
+          <div className="flex flex-wrap justify-between">
+            <ProjectCard 
+              title={TradingAssistantData.title}
+              date={TradingAssistantData.date}
+              type={TradingAssistantData.type}
+              specialties={TradingAssistantData.specialties}
+              description={TradingAssistantData.description}
+            />
+
+            <ProjectCard 
+              title={VisionaryPhotoboothData.title}
+              date={VisionaryPhotoboothData.date}
+              type={VisionaryPhotoboothData.type}
+              url={VisionaryPhotoboothData.url}
+              specialties={VisionaryPhotoboothData.specialties}
+              description={VisionaryPhotoboothData.description}
+            />
+          </div>
+
+          <div className="flex flex-wrap justify-between md:mt-5">
+          <ProjectCard 
+              title={AuditBuddyData.title}
+              date={AuditBuddyData.date}
+              type={AuditBuddyData.type}
+              url={AuditBuddyData.url}
+              specialties={AuditBuddyData.specialties}
+              description={AuditBuddyData.description}
+            />
+            </div>
+          </div>
+        </div>
+       
       </main>
 
       <ContactFooter/>

@@ -6,17 +6,17 @@ import React from 'react';
 const ExperienceSection = () => {
     const WebContentAdministratorData = {
         title: "Web Content Administrator",
-        employer: "COLLEGE OF ENGINEERING, MICHIGAN STATE UNIVERSITY",
+        employer: "MSU COLLEGE OF ENGINEERING",
         date: "MAY 2024 - PRESENT",
       };
       const StudentFrontendWebAssistantData = {
         title: "Student Frontend Web Assistant",
-        employer: "COLLEGE OF ENGINEERING, MICHIGAN STATE UNIVERSITY",
+        employer: "MSU COLLEGE OF ENGINEERING",
         date: "MAY 2023 - MAY 2024",
       };
       const UndergraduateLearningAssistantData = {
         title: "CSE 477 Undergraduate Learning Assistant",
-        employer: "COLLEGE OF ENGINEERING, MICHIGAN STATE UNIVERSITY",
+        employer: "MSU COLLEGE OF ENGINEERING",
         date: "JAN 2024 - MAY 2024",
       };
       const InformationTechnologyInternData = {
@@ -33,6 +33,7 @@ const ExperienceSection = () => {
       ];
 
   return (
+    
     <div>
       {jobs.map((job, index) => (
         <div key={index}>
@@ -43,7 +44,7 @@ const ExperienceSection = () => {
           />
   
           {index !== jobs.length - 1 && (
-            <div className="mb-3 relative bottom-0 left-1/2 transform -translate-x-1/2 h-3 w-0.5 bg-gray-300"></div>
+            <div className="mb-3 relative h-3 left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-300"></div>
           )}
         </div>
       ))}

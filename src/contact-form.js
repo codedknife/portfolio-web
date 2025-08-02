@@ -53,20 +53,20 @@ export default function ContactFooter() {
             <footer id="footer" className="bg-[#f5f5f5] pt-10 pb-5 px-5 md:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2">
                 <div>
-                    <h2 className="text-[4rem] md:text-[7.5rem] font-bold">CONTACT ME</h2>
+                    <h2 className="text-[3rem] md:text-[7.5rem] font-bold">CONTACT ME</h2>
                     <div className="flex flex-row gap-10">
                         <a href="https://github.com/codedknife" className="underline-link text-lg">
                             <p className="text-2xl">↗ GitHub</p>
                         </a>
 
                         <a href="https://www.linkedin.com/in/ash-tran/" className="underline-link text-lg">
-                            <p className="text-2xl">↗ Linkedin</p>
+                            <p className="text-2xl">↗ LinkedIn</p>
                         </a>
                     </div>
                 </div>
 
                 <div className="flex justify-center w-full mt-5 md:mt-0">
-                    <form onSubmit={onSubmit} className="max-w-sm flex flex-col gap-4 w-full">
+                    <form onSubmit={onSubmit} className="max-w-m flex flex-col gap-4 w-full">
                     <input
                         type="text"
                         name="name"

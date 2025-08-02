@@ -2,11 +2,10 @@
 import { useState, useEffect } from 'react';
 
 const skills = [
-  "WEB DEVELOPMENT",
-  "SOFTWARE DEVELOPMENT",
-  "UX/UI DESIGN",
-  "WEB ACCESSIBILITY",
-  "SEARCH ENGINE OPTIMIZATION (SEO)",
+  "WEB DEVELOPER",
+  "UX/UI DESIGNER",
+  "SOFTWARE DEVELOPER",
+  "WEB ACCESSIBILITY SPECIALIST",
 ];
 
 export default function RotatingSpecializations() {
