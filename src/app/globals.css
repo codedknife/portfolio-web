@@ -69,8 +69,8 @@ a, button {
 }
 
 .img-background {
-  background-color: #171717;
-  opacity: 10%;
+  background-color: #66615C;
+  opacity: 100%;
 }
 
 .project-name {
@@ -113,7 +113,6 @@ a, button {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: black;
 }
 
 .underline-link::after {
@@ -137,7 +136,7 @@ a, button {
 }
 
 .project-card:hover {
-  background-color: rgba(102, 97, 92, 0.1);
+  background-color: #f5f5f5;
 }
 
 .cta-button {
@@ -147,3 +146,4 @@ a, button {
 .cta-button:hover {
   transform: translateY(-4px);
 }
+

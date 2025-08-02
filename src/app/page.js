@@ -4,6 +4,7 @@ import Navigation from "./navigation";
 import AboutSection from "./about-section";
 import LandingSection from "./landing-section";
 import ExperienceSection from "./experience-section";
+import ContactFooter from '@/contact-form';
 import CustomCursor from "@/custom-cursor";
 import ProjectCard from "@/project-card";
 import { useState, useEffect } from "react";
@@ -86,11 +87,11 @@ export default function Home() {
         {/* EXTERNAL LINKS */}
         <div className="hidden md:flex fixed top-1/2 right-5 flex-col gap-5 z-50">
               <a href="https://github.com/codedknife">
-                <img src="/github-mark.png" alt="GitHub Icon" className="w-5 h-5" />
+                <img src="/github-mark.png" alt="GitHub Icon" className="w-7 h-7 transition-transform duration-250 hover:scale-150" />
               </a>
 
                <a href="https://www.linkedin.com/in/ash-tran/">
-                <img src="/linkedin.png" alt="LinkedIn Icon" className="w-5 h-5" />
+                <img src="/linkedin.png" alt="LinkedIn Icon" className="w-7 h-7 transition-transform duration-250 hover:scale-150" />
               </a>
         </div>
 
@@ -102,7 +103,7 @@ export default function Home() {
         
          {/* EXPERIENCE SECTION*/}
         <div className="min-h-screen ml-10 mr-10 md:ml-25 md:mr-25 mb-5">
-          <h2 id="experience" className="text-[2rem] md:text-[3rem] font-bold mb-5 mt-5 text-center md:text-start">EXPERIENCE</h2>
+          <h2 id="experience" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-5 text-start">EXPERIENCE</h2>
 
 
               {/* <VerticalTabs/> */}
@@ -111,7 +112,7 @@ export default function Home() {
 
         {/* PORTFOLIO SECTION*/}
         <div className="min-h-screen ml-10 mr-10 md:ml-25 md:mr-25">
-        <h2 id="work" className="text-[2rem] md:text-[3rem] font-bold mb-5 mt-5 md:mt-0 text-center md:text-start">PORTFOLIO</h2>
+        <h2 id="work" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-10 md:mt-0 text-start">PORTFOLIO</h2>
 
         <div className="flex flex-wrap justify-between">
           <ProjectCard 
@@ -142,8 +143,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="row-start-3 flex gap-6 flex-wrap mt-15 mb-0 md:mt-25 md:mb-5 ml-15">
-      </footer>
+      <ContactFooter/>
     </div>
   );
 }

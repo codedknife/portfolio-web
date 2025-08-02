@@ -73,7 +73,7 @@ const CustomCursor = () => {
         className={`
           transition-all duration-300 ease-in-out
           rounded-full
-          ${hovered ? 'w-10 h-10 bg-[#7e7c73]/50' : 'w-5 h-5 bg-[#7e7c73]/65'}
+          ${hovered ? 'w-7 h-7 bg-[#7e7c73]/50' : 'w-3.5 h-3.5 bg-[#7e7c73]/65'}
           mix-blend-multiply
         `}
       />

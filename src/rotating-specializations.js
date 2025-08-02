@@ -2,10 +2,10 @@
 import { useState, useEffect } from 'react';
 
 const skills = [
-  "FRONT-END DEVELOPMENT",
+  "WEB DEVELOPMENT",
+  "SOFTWARE DEVELOPMENT",
   "UX/UI DESIGN",
   "WEB ACCESSIBILITY",
-  "SOFTWARE DEVELOPMENT",
   "SEARCH ENGINE OPTIMIZATION (SEO)",
 ];
 
@@ -28,7 +28,7 @@ export default function RotatingSpecializations() {
   return (
     <div className="mt-5 mb-5 h-12 flex justify-center items-center text-center">
       <div
-        className={`transition-opacity duration-500 ease-in-out text-[1.25rem] md:text-[2rem] text-[#66615C] ${
+        className={`transition-opacity duration-500 ease-in-out text-[1.50rem] md:text-[2rem] text-[#66615C] ${
           fade ? 'opacity-100' : 'opacity-0'
         }`}
       >

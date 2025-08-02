@@ -29,7 +29,7 @@ const LandingSection = () => {
         <h1
           className={`transition-all duration-700 ease-out delay-200 transform ${
             animate ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-25'
-          } text-[3rem] text-xl md:text-[7.5rem] text-center name font-bold`}
+          } text-[3.5rem] text-xl md:text-[7.5rem] text-center name font-bold`}
         >
           ASHLEY TRAN.
         </h1>
@@ -50,8 +50,8 @@ const LandingSection = () => {
           }`}
         >
           <a
-            className="flex gap-2 text-center border border-solid text-background text-md p-5 min-w-35 bg-[#66615C] cta-button"
-            href="/resume_march2025.pdf"
+            className="flex gap-2 text-center border border-solid text-background text-md p-5 min-w-45 justify-center bg-[#66615C] cta-button"
+            href="https://www.linkedin.com/in/ash-tran/overlay/1753803698510/single-media-viewer/?profileId=ACoAAEMWXfEBHC1td9lXyyvgjuUgH12Igmw7kMI"
           >
             VIEW RESUME
           </a>
