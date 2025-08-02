@@ -101,7 +101,7 @@ export default function ContactFooter() {
                 </div>
                 </div>
                 <div className="mt-5 md:-mt-10 mb-10">
-                        <p>DEVELOPED AND DESIGNED BY <span className="font-semibold">ASHLEY TRAN</span>.</p>
+                        <p className="font-sm">DEVELOPED AND DESIGNED BY <span className="font-semibold">ASHLEY TRAN</span>.</p>
                     </div>
             </footer>
     </>

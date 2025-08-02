@@ -16,7 +16,7 @@ const ProjectCard = ({ title, date, type, url, specialties, description }) => {
             <h2 className="text-2xl font-bold">{title}</h2>
             <h3 className="text-[1.25rem] md:text-right">{type}</h3>
           </div>
-          <h4>{date}</h4>  
+          <h4 className="text-sm">{date}</h4>  
                  
           <div className="text-xs font-medium py-5">
             {specialties.join(', ')}
@@ -25,7 +25,7 @@ const ProjectCard = ({ title, date, type, url, specialties, description }) => {
             {description}
           </p>
         </div>
-        <span className="absolute bottom-3 right-4 text-sm text-[#66615C] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span className="absolute bottom-3 right-4 text-sm text-[#66615C] md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           ↗ View Project
         </span>
       </a>
