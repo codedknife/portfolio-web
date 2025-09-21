@@ -10,7 +10,10 @@ const CustomCursor = () => {
   useEffect(() => {
     const checkDevice = () => {
       const width = window.innerWidth;
-      if (width <= 768) {
+      const isTouchDevice = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+      if (width <= 768 && isTouchDevice) {
         setIsMobile(true); 
       } else {
         setIsMobile(false); 

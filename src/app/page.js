@@ -48,15 +48,22 @@ export default function Home() {
     );
   }
 
-  const TradingAssistantData = {
-    title: "Virtual Trading Assistant",
-    date: "MAY 2025",
-    type: "SOFTWARE",
-    specialties: ["PYTHON", "OPENCV", "TKINTER"],
-    description: `Designed to enhance the trading experience in a virtual game by using OCR technology to scan in-game user names. 
-      It then searches the users' inventories on a website and filters for specific items chosen by the user, with an emphasis on rarer items. 
-      This tool saves time by automating the inventory check process, quickly identifying valuable or hard-to-find items without the need for manual searches.`
+   const AvatarRecommenderData = {
+    title: "Roblox Avatar Recommendations",
+    date: "SEPTEMBER 2025",
+    type: "GAME",
+    specialties: ["LUA", "ROBLOX STUDIO", "FASTAPI"],
+    description: `This game helps players discover new styles by analyzing the items they already own and suggesting complementary outfits and accessories. Players can mix and match recommendations to create fresh, personalized looks and explore trending combinations. It provides an engaging way to experiment with avatar customization and discover new fashion ideas in Roblox.`
   };
+
+  const FondrData = {
+    title: "Fondr – Relationship Tracker",
+    date: "AUGUST 2025",
+    type: "MOBILE",
+    specialties: ["TYPESCRIPT", "REACT NATIVE", "EXPO", "SUPABASE"],
+    description: `This app is a collaborative space built for couples to save, organize, and share their favorite places, wishlist items, and meaningful milestones—all in one place. From a shared list of gift ideas, to a tracker for go-to date spots, to a timeline of relationship milestones, both partners can add and contribute as they plan intentionally and grow together.`
+  };
+
   const VisionaryPhotoboothData = {
     title: "Visionary Photobooths",
     date: "AUGUST 2024",
@@ -68,11 +75,11 @@ export default function Home() {
       The result is a more user-friendly site that drives increased traffic and customer engagement.`
   };
   const AuditBuddyData = {
-    title: "AuditBuddy",
+    title: "Auditing Assistant Using Video AI Platforms",
     date: "JANUARY 2024",
     type: "WEB",
     url: "https://capstone.cse.msu.edu/2024-01/projects/urban-science/",
-    specialties: ["JAVASCRIPT", "REACT", "PYTHON FLASK", "FIREBASE", "OPENCV"],
+    specialties: ["JAVASCRIPT", "REACT", "FLASK", "FIREBASE", "OPENCV", "YOLOv3"],
     description: `AuditBuddy automates dealership audits for automotive brands by analyzing photos and videos to assess performance. 
                   This eliminates the need for manual inspections, offering a more efficient and resource-effective solution. 
                   The app generates detailed performance reports and enables users to compare data across multiple dealerships.`
@@ -81,7 +88,10 @@ export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)]">
      
+     <div className="fixed inset-0 pointer-events-none cursor-none z-[9999]">
       <CustomCursor></CustomCursor>
+     </div>
+  
   
       <main>
 
@@ -118,16 +128,30 @@ export default function Home() {
           <div className="px-5 mb-10 w-full max-w-[85rem]">
           <h2 id="work" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-10 md:mt-0 text-start">PORTFOLIO</h2>
 
+
           <div className="flex flex-wrap justify-between">
             <ProjectCard 
-              title={TradingAssistantData.title}
-              date={TradingAssistantData.date}
-              type={TradingAssistantData.type}
-              specialties={TradingAssistantData.specialties}
-              description={TradingAssistantData.description}
+              title={AvatarRecommenderData.title}
+              date={AvatarRecommenderData.date}
+              type={AvatarRecommenderData.type}
+              url={AvatarRecommenderData.url}
+              specialties={AvatarRecommenderData.specialties}
+              description={AvatarRecommenderData.description}
             />
 
             <ProjectCard 
+              title={FondrData.title}
+              date={FondrData.date}
+              type={FondrData.type}
+              url={FondrData.url}
+              specialties={FondrData.specialties}
+              description={FondrData.description}
+            />
+          </div>
+
+          <div className="flex flex-wrap justify-between md:mt-5">
+             
+             <ProjectCard 
               title={VisionaryPhotoboothData.title}
               date={VisionaryPhotoboothData.date}
               type={VisionaryPhotoboothData.type}
@@ -135,9 +159,7 @@ export default function Home() {
               specialties={VisionaryPhotoboothData.specialties}
               description={VisionaryPhotoboothData.description}
             />
-          </div>
-
-          <div className="flex flex-wrap justify-between md:mt-5">
+            
           <ProjectCard 
               title={AuditBuddyData.title}
               date={AuditBuddyData.date}

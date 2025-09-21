@@ -9,10 +9,10 @@ const ProjectCard = ({ title, date, type, url, specialties, description }) => {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        className="project-card md:h-[35vh] bg-white border border-gray-300 p-5 flex flex-col items-center justify-center text-left relative overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+        className="project-card md:h-[100%] bg-white border border-gray-300 p-5 flex flex-col items-center justify-center text-left relative overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
       >
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-[10fr_1fr]">
             <h2 className="text-2xl font-bold">{title}</h2>
             <h3 className="text-[1.25rem] md:text-right">{type}</h3>
           </div>

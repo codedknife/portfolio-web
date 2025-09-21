@@ -6,29 +6,29 @@ import React from 'react';
 const ExperienceSection = () => {
     const WebContentAdministratorData = {
         title: "Web Content Administrator",
-        employer: "MSU COLLEGE OF ENGINEERING",
-        date: "MAY 2024 - PRESENT",
+        employer: "MICHIGAN STATE UNIVERSITY — COLLEGE OF ENGINEERING",
+        date: "MAY 2024 — PRESENT",
       };
       const StudentFrontendWebAssistantData = {
         title: "Student Front-End Web Assistant",
-        employer: "MSU COLLEGE OF ENGINEERING",
-        date: "MAY 2023 - MAY 2024",
+        employer: "MICHIGAN STATE UNIVERSITY — COLLEGE OF ENGINEERING",
+        date: "MAY 2023 — MAY 2024",
       };
       const UndergraduateLearningAssistantData = {
-        title: "CSE 477 Undergraduate Learning Assistant",
-        employer: "MSU COLLEGE OF ENGINEERING",
-        date: "JAN 2024 - MAY 2024",
+        title: "Undergraduate Learning Assistant",
+        employer: "MICHIGAN STATE UNIVERSITY — COLLEGE OF ENGINEERING",
+        date: "JAN 2024 — MAY 2024",
       };
       const InformationTechnologyInternData = {
         title: "Information Technology Intern",
         employer: "NORTH AMERICAN LIGHTING",
-        date: "MAY 2022 - AUG 2022",
+        date: "MAY 2022 — AUG 2022",
       };
 
       const jobs = [
         WebContentAdministratorData,
-        StudentFrontendWebAssistantData,
         UndergraduateLearningAssistantData,
+        StudentFrontendWebAssistantData,
         InformationTechnologyInternData,
       ];
 
