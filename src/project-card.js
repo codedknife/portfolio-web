@@ -4,7 +4,7 @@ import React from 'react';
 
 const ProjectCard = ({ title, date, type, url, specialties, description }) => {
   return (
-    <div className="w-1/1 md:w-[49.5%] pb-5 md:pb-0 relative group">
+    <div className="w-1/1 p-2 relative group">
        <a
         href={url}
         target="_blank"

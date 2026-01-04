@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import RotatingSpecializations from "@/rotating-specializations";
 
 const LandingSection = () => {
     const [animate, setAnimate] = useState(false);
@@ -34,14 +33,17 @@ const LandingSection = () => {
           ASHLEY TRAN.
         </h1>
 
-        {/* SPECIALIZATIONS */}
+        <div className="mt-5 mb-5 h-12 flex justify-center items-center text-center">
         <div
-          className={`transition-all duration-700 ease-out delay-100 transform ${
+        className={`transition-all duration-700 ease-out delay-200 transform ${
             animate ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-25'
-          }`}
-        >
-          <RotatingSpecializations/>
-        </div>
+          } text-[1.50rem] md:text-[2rem] text-[#66615C]  }`}
+      >
+        WEB & MOBILE
+      </div>
+    </div>
+
+
 
         {/* CTA */}
         <div
@@ -50,7 +52,7 @@ const LandingSection = () => {
           }`}
         >
           <a
-            className="flex gap-2 text-center border border-solid text-background text-md p-5 min-w-45 justify-center bg-[#66615C] cta-button"
+            className="flex gap-2 text-center border border-solid text-background text-md p-5 min-w-45 justify-center bg-[#333333] cta-button"
             href="/ash-tran-resume.pdf"
           >
             <span className="font-family: Arial, sans-serif;">↗</span> VIEW RESUME

@@ -6,30 +6,36 @@ import React from 'react';
 const ExperienceSection = () => {
     const WebContentAdministratorData = {
         title: "Web Content Administrator",
-        employer: "MICHIGAN STATE UNIVERSITY — COLLEGE OF ENGINEERING",
+        employer: "Michigan State University — College of Engineering",
         date: "MAY 2024 — PRESENT",
       };
       const StudentFrontendWebAssistantData = {
         title: "Student Front-End Web Assistant",
-        employer: "MICHIGAN STATE UNIVERSITY — COLLEGE OF ENGINEERING",
+        employer: "Michigan State University — College of Engineering",
         date: "MAY 2023 — MAY 2024",
       };
       const UndergraduateLearningAssistantData = {
         title: "Undergraduate Learning Assistant",
-        employer: "MICHIGAN STATE UNIVERSITY — COLLEGE OF ENGINEERING",
+        employer: "Michigan State University — College of Engineering",
         date: "JAN 2024 — MAY 2024",
       };
       const InformationTechnologyInternData = {
         title: "Information Technology Intern",
-        employer: "NORTH AMERICAN LIGHTING",
+        employer: "North American Lighting",
         date: "MAY 2022 — AUG 2022",
       };
+      const CashierData = {
+        title: "Cashier",
+        employer: "Asia's Finest",
+        date: "DEC 2019 — DEC 2023"
+      }
 
       const jobs = [
         WebContentAdministratorData,
         UndergraduateLearningAssistantData,
         StudentFrontendWebAssistantData,
         InformationTechnologyInternData,
+        CashierData
       ];
 
   return (

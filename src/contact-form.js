@@ -70,20 +70,20 @@ export default function ContactFooter() {
                     <input
                         type="text"
                         name="name"
-                        placeholder="NAME"
+                        placeholder="Name"
                         required
                         className="p-3 border border-[#66615C] focus:outline-none"
                     />
                     <input
                         type="email"
                         name="email"
-                        placeholder="EMAIL"
+                        placeholder="Email"
                         required
                         className="p-3 border border-[#66615C] focus:outline-none"
                     />
                     <textarea
                         name="message"
-                        placeholder="MESSAGE"
+                        placeholder="Message"
                         required
                         rows={4}
                         className="p-3 border border-[#66615C] focus:outline-none"
@@ -92,7 +92,7 @@ export default function ContactFooter() {
                         type="submit"
                         className="bg-[#66615C] text-white font-bold py-3"
                     >
-                        SEND
+                        SUBMIT
                     </button>
                     {result && (
                         <p className="mt-4 text-[#66615C] font-semibold">{result}</p>

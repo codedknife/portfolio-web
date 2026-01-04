@@ -13,22 +13,22 @@ const AboutSection = () => {
             {/* SUBHEADING */}
             <h3 className="text-[1.50rem] mb-[1rem] md:text-[1.75rem] font-bold text-[#66615C]"> A developer who focuses on design, usability, and clean code.</h3>
             <p className="text-justify text-[1rem]">
-            I’m originally from Lansing, MI, and I graduated from Michigan State University in Spring 2024 with a degree in Computer Science and a minor in Business. I love using modern tools and frameworks to bring creative ideas to life.
+            I’m originally from Lansing, MI, and graduated from Michigan State University in Spring 2024 with a degree in Computer Science and a minor in Business. 
+            I'm enthusiastic about applying my skills and knowledge to create meaningful online experiences. 
+            With a solid foundation in coding and a passion for design, I'm eager to contribute to innovative projects and continue learning from experienced professionals.
             </p>
+          
             <br/>
             <p className="text-justify text-[1rem]">
-            I’m especially drawn to projects that explore how technology can solve real-world problems — blending technical thinking with entrepreneurial curiosity. I'm always thinking about what to build next — and how to make it better.
-            </p>
-            <br/>
-            <p className="text-justify text-[1rem]">
-            Outside of coding, I’m into horror movies and share everyday life with my partner, our cat, and our hamster.
+            Outside of coding, I enjoy horror movies, finding a good deal, and sharing everyday life with my partner, our cat, and our hamsters.
             </p>
 
             {/* CONTACT BUTTON*/}
             <div className="mt-5">
                 <a
                     href="#footer"
-                    className="flex font-bold text-[1.5rem] md:text-[2rem] text-[#66615C] cta-button"
+                    
+                    className="underline-link flex font-bold text-[1.5rem] md:text-[2rem] text-[#333333]"
                 >
                   ↗ CONTACT ME
                  

@@ -48,18 +48,11 @@ export default function Home() {
     );
   }
 
-   const AvatarRecommenderData = {
-    title: "Roblox Avatar Recommendations",
-    date: "SEPTEMBER 2025",
-    type: "GAME",
-    specialties: ["LUA", "ROBLOX STUDIO", "FASTAPI"],
-    description: `This game helps players discover new styles by analyzing the items they already own and suggesting complementary outfits and accessories. Players can mix and match recommendations to create fresh, personalized looks and explore trending combinations. It provides an engaging way to experiment with avatar customization and discover new fashion ideas in Roblox.`
-  };
-
   const FondrData = {
     title: "Fondr – Relationship Tracker",
     date: "AUGUST 2025",
     type: "MOBILE",
+     url: "https://fondr.app",
     specialties: ["TYPESCRIPT", "REACT NATIVE", "EXPO", "SUPABASE"],
     description: `This app is a collaborative space built for couples to save, organize, and share their favorite places, wishlist items, and meaningful milestones—all in one place. From a shared list of gift ideas, to a tracker for go-to date spots, to a timeline of relationship milestones, both partners can add and contribute as they plan intentionally and grow together.`
   };
@@ -128,16 +121,7 @@ export default function Home() {
           <div className="px-5 mb-10 w-full max-w-[85rem]">
           <h2 id="work" className="text-[2rem] md:text-[3.5rem] font-bold mb-5 mt-10 md:mt-0 text-start">PORTFOLIO</h2>
 
-
-          <div className="flex flex-wrap justify-between">
-            <ProjectCard 
-              title={AvatarRecommenderData.title}
-              date={AvatarRecommenderData.date}
-              type={AvatarRecommenderData.type}
-              url={AvatarRecommenderData.url}
-              specialties={AvatarRecommenderData.specialties}
-              description={AvatarRecommenderData.description}
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2">
 
             <ProjectCard 
               title={FondrData.title}
@@ -147,9 +131,6 @@ export default function Home() {
               specialties={FondrData.specialties}
               description={FondrData.description}
             />
-          </div>
-
-          <div className="flex flex-wrap justify-between md:mt-5">
              
              <ProjectCard 
               title={VisionaryPhotoboothData.title}
